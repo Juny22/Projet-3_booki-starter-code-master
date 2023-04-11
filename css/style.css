@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
-}
+    box-sizing: border-box;
+  }
 
 :root {
     --main-color: #0065FC;
@@ -14,8 +14,11 @@
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -201,8 +204,8 @@ header nav a {
 
 .container-filtres {
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 2%;
 }
 
 .border-radius {
@@ -246,7 +249,7 @@ header nav a {
     background: #DEEBFF;
 }
 
-/*box search*/
+/*box search******************* */
 
 .input-group {
     display: flex;
@@ -267,7 +270,7 @@ header nav a {
   }
 
   .input {
-    width: 150px;
+    width: 200px;
     height: 49px;
     padding: 0 1rem;
     font-weight: 700;
@@ -283,9 +286,8 @@ header nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 16px;
-    gap: 10px;
-    border: 1px solid #0065FC;
+    padding: 14px 16px;
+    border: 0px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
     color: #F2F2F2;
@@ -322,12 +324,11 @@ header nav a {
 
 .hebergements-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .hebergements-cards img {
-    width: 233px;
+    width: 100%;
     height: 114px;
     border: 5px solid #FFFFFF;
     border-top-left-radius: 20px;
@@ -339,17 +340,14 @@ header nav a {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .h-card {
     background-color: white;
     border-radius: 20px;
-    width: 243px;
-    height: 207.25px;
+    width: 250px;
+    /* width 31% */
     padding: 0px 0px 15px;
-    gap: 4px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -377,8 +375,8 @@ header nav a {
 
 .box {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content : space-between;
 }
 
 .afficher {
@@ -387,4 +385,75 @@ header nav a {
     font-size: 18px;
 }
 
-/* Activités *********************************** */
+/* Activités ************************* */
+
+.a-card {
+    background-color: white;
+    border-radius: 20px;
+    width: 297px;
+    /* width 22% */
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activities-title {
+    display: flex;
+    align-items: center;
+}
+
+.activities-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activities-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.a-card img {
+    object-fit: cover;
+}
+
+.activities-cards .card-title {
+    margin: 5%;
+}
+
+.activities-cards .a-card {
+    margin-top: 33px;
+}
+
+.activities {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* footer ************************************* */
+
+footer {
+    margin-top: 50px;
+    background-color: var(--main-bg-color);
+}
+
+.h-footer {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20%;
+}
+
+.footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* test ******************* */
+
+article:nth-child() {
+
+}
