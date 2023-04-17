@@ -18,12 +18,14 @@
     <div class="main-container">
         <header>
             <nav>
-                <div class="heb-act">
-                    <a href="#" class="menu__item">Hébergements</a>
-                    <a href="#" class="menu__item">Activités</a>
-                </div>
-                <div>
-                    <img src="images/logo/Booki.png" alt="Logo Booki" />
+                <div class="logo">
+                    <div class="heb-act">
+                        <a href="#"><span class="a-hover">Hébergements</span></a>
+                        <a href="#"><span class="a-hover">Activités</span></a>
+                    </div>
+                    <div class="logo-center">
+                        <img src="images/logo/Booki.png" alt="Logo Booki" />
+                    </div>
                 </div>
                 <div>
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -33,19 +35,25 @@
                     <div class="input-group">
                         <i class="fa-solid fa-location-dot inputgps"></i>
                         <input type="text" class="input" id="search" name="search" placeholder="Marseille, France">
-                        <input class="button--submit" value="Rechercher" type="submit">
+                        <!-- <input class="button--submit" value="Rechercher" type="submit"> -->
+                        <button class="button--submit" type="submit">
+                            <i class="fa-solid fa-magnifying-glass glass"></i>
+                            <span class="search">Rechercher</span>
+                        </button>
                     </div>
                 </form>
                 <div class="container-filtres">
                     <div class="filtre">Filtres</div>
-                    <div><button class="border-radius"><i class="fa-solid fa-money-bill-wave icone"></i>Économique</button></div>
-                    <div><button class="border-radius"><i class="fa-solid fa-person icone"></i>Familial</button></div>
-                    <div><button class="border-radius"><i class="fa-solid fa-heart icone"></i>Romantique</button></div>
-                    <div><button class="border-radius"><i class="fa-solid fa-fire icone"></i>Nos pépites</button></div>
+                    <div class="filtre-box">
+                        <div><button class="border-radius"><i class="fa-solid fa-money-bill-wave icone"></i>Économique</button></div>
+                        <div><button class="border-radius"><i class="fa-solid fa-person icone"></i>Familial</button></div>
+                        <div><button class="border-radius"><i class="fa-solid fa-heart icone"></i>Romantique</button></div>
+                        <div><button class="border-radius"><i class="fa-solid fa-fire icone"></i>Nos pépites</button></div>
+                    </div>
                 </div>
                 <div class="container-info">
                     <div><i class="fa-sharp fa-solid fa-info info" style="color: #0065FC;"></i></div>
-                    <div class="phrase-info">Plus de 500 logements sont disponibles dans cette ville </div>
+                    <div class="phrase-info">Plus de 500 logements sont disponibles dans cette ville</div>
                 </div>
             </nav>
         </header>
@@ -259,7 +267,7 @@
             <div>
                 <section class="footer-box">
                     <div class="h-footer">
-                        <h3>À proros</h3>
+                        <h3>À propos</h3>
                         <p>Fonction du site<p>
                         <p>Conditions générales</p>
                         <p>Donnés et confidentialité</p>
