@@ -1,5 +1,4 @@
-/****** General ***********/
-* {
+*{
     box-sizing: border-box;
   }
 
@@ -109,7 +108,7 @@ header nav a {
 
 .container-filtres {
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     width: 100%;
     gap: 2%;
 }
@@ -212,7 +211,7 @@ header nav a {
     margin-left: 15px;
 }
 
-/****** Hebergements And Populaires ***********/
+/* ***** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -225,7 +224,12 @@ header nav a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+.lien {
+    text-decoration: none;
+    color: black;
+}
+
+/* ***** Hebergements ***********/
 .hebergements {
     width: 65%;
     margin-top: 50px;
@@ -252,6 +256,7 @@ header nav a {
 }
 
 .h-card {
+    display: block;
     background-color: white;
     border-radius: 20px;
     width: 31%;
@@ -294,7 +299,7 @@ header nav a {
     font-size: 18px;
 }
 
-/****** Populaires ***********/
+/* ***** Populaires ***********/
 .populaires {
     width: 32%;
     margin-top: 50px;
@@ -403,13 +408,13 @@ footer {
 
 .footer-box {
     display: flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/* ***** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
